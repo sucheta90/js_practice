@@ -1,0 +1,15 @@
+div span{
+    display: block;
+    text-align: center;
+}
+    
+    
+
+
+.eachPokemon:hover{
+    border-radius: 50%;
+    background-color: palegoldenrod;
+    text-align:center;
+    display:inline-block;
+    
+}

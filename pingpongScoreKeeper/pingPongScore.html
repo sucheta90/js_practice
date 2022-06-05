@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+    <!-- <style>
+      .winner {
+        color: aquamarine;
+      }
+      .loser {
+        color: brown;
+      }
+      .default {
+        color: black;
+      }
+    </style> -->
+    <title>Ping Pong Scrore Keeper</title>
+  </head>
+
+  <body>
+    <section class="column is-half">
+      <div class="card">
+        <img src="/images/ping_pong.jpg" alt="ping-pong board" class="column" />
+
+        <header class="card-header">
+          <p class="card-header-title">Ping Pong Score Keeper</p>
+          <button class="card-header-icon" aria-label="more options">
+            <span class="icon">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </header>
+        <div class="card-content">
+          <div class="content">
+            <h1>
+              <span class="is-size-2" id="player1_span">0</span> to
+              <span class="is-size-2" id="player2_span">0</span>
+            </h1>
+            <label for="topScore">Playing to</label>
+            <select class="is-rounded" name="topScore" id="topScore">
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+            </select>
+          </div>
+          <p class="is-size-4">Use the buttons below to keep score</p>
+        </div>
+        <footer class="card-footer">
+          <button id="score_player1" class="button card-footer-item is-primary">
+            +1 Player 1
+          </button>
+          <button id="score_player2" class="button card-footer-item is-info">
+            +1 Player 2
+          </button>
+          <button id="reset" class="button card-footer-item is-danger">
+            Reset
+          </button>
+        </footer>
+      </div>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
